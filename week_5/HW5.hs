@@ -81,8 +81,3 @@ withVars :: [(String, Integer)]
     -> (M.Map String Integer -> Maybe Integer)
     -> Maybe Integer
 withVars vs exp = exp $ M.fromList vs
-
-someFunc :: Int -> Int -> Int
-someFunc a b = (a+b)*b
-
-1 `someFunc` 2
